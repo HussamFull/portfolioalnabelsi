@@ -151,6 +151,15 @@ export default function Portfolio1() {
       previewLink: 'portfolio-18.png',
       detailsLink: 'https://tshop-6wkj.onrender.com',
       galTitle: 'Web 3'
+    },
+    {
+      id: 19,
+      category: 'filter-aspnet',
+      title: 'Intelligentes Restaurant-Managementsystem (RestoApp)',
+      imgSrc: 'portfolio-19.png',
+      previewLink: 'portfolio-19.png',
+      detailsLink: 'https://www.youtube.com/watch?v=8DH6FVWQ-fY',
+      galTitle: 'Web 3'
     }
   ];
 
@@ -198,12 +207,27 @@ export default function Portfolio1() {
   >
     Projekt
   </li>
-
-  <li
+    <li
     onClick={() => setFilter('filter-fullstack')}
     className={filter === 'filter-fullstack' ? 'filter-active' : ''}
   >
     Full Stack
+  </li>
+
+ 
+
+  <li
+    onClick={() => setFilter('filter-aspnet')}
+    className={filter === 'filter-aspnet' ? 'filter-active' : ''}
+  >
+    ASP.NET
+  </li>
+
+   <li
+    onClick={() => setFilter('filter-nodejs')}
+    className={filter === 'filter-nodejs' ? 'filter-active' : ''}
+  >
+    Node.js
   </li>
 
 </ul>
