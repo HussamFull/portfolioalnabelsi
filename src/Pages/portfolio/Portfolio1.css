@@ -1,0 +1,265 @@
+/*--------------------------------------------------------------
+# Portfolio Section - Modern Dark Premium Theme
+--------------------------------------------------------------*/
+.portfolio {
+  padding: 60px 0;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+/* أزرار الفلترة العلوية */
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 40px auto;
+  list-style: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 6px 20px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #a8a8a8;
+  margin: 2px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover, 
+.portfolio #portfolio-flters li.filter-active {
+  color: #deff9a; /* لون أخضر ليموني نيون فخم */
+  background: rgba(222, 255, 154, 0.15);
+}
+
+/* صندوق الكارد الكامل للمشروع */
+.portfolio .portfolio-card-box {
+  background: rgba(30, 30, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .portfolio-card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(222, 255, 154, 0.1);
+  border-color: rgba(222, 255, 154, 0.3);
+}
+
+/* صندوق العناوين الخاص بكل كارد */
+.portfolio .portfolio-title-box {
+  padding: 18px 20px;
+  background: rgba(20, 20, 20, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.portfolio .portfolio-title-box h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5f5f5;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* حاوية الصورة والروابط */
+.portfolio .portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  aspect-ratio: 16 / 10;
+  background: #121212;
+}
+
+.portfolio .portfolio-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio .portfolio-card-box:hover .portfolio-wrap img {
+  transform: scale(1.05);
+}
+
+/* طبقة الفلتر الشفاف عند عمل Hover */
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-card-box:hover .portfolio-wrap::before {
+  opacity: 1;
+}
+
+/* أزرار الروابط داخل الكارد */
+.portfolio .portfolio-wrap .portfolio-links {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-card-box:hover .portfolio-wrap .portfolio-links {
+  bottom: 35%; /* يرتفع لمنتصف الكارد بسلاسة */
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  background: #deff9a;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(222, 255, 154, 0.3);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a i {
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details (تعديلات بسيطة للتوافق العام)
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  background: #222;
+  color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* زر المعاينة */
+
+.preview-btn {
+  background: #c9a227;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.preview-btn:hover {
+  background: gold;
+  transform: scale(1.05);
+}
+
+
+/* الخلفية السوداء */
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+
+/* محتوى الصورة */
+
+.image-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+
+/* الصورة */
+
+.image-modal-content img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,215,0,0.3);
+}
+
+
+/* زر الإغلاق */
+
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, gold, #c9a227);
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255,215,0,0.5);
+  transition: 0.3s;
+}
+
+
+/* حركة الهوفر */
+
+.close-btn:hover {
+  transform: rotate(90deg) scale(1.1);
+  background: gold;
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
