@@ -160,7 +160,16 @@ export default function Portfolio1() {
       previewLink: 'portfolio-19.png',
       detailsLink: 'https://www.youtube.com/watch?v=8DH6FVWQ-fY',
       galTitle: 'Web 3'
-    }
+    },
+     {
+      id: 20,
+      category: 'filter-app',
+      title: 'Cozy Home Vienna',
+      imgSrc: 'portfolio-20.png',
+      previewLink: 'portfolio-20.png',
+      detailsLink: 'https://car-zeta-flame.vercel.app/',
+      galTitle: 'App 3'
+    },
   ];
 
   // دالة الحل الحركي للمسارات بداخل الـ src
