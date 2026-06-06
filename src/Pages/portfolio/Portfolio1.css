@@ -263,3 +263,94 @@
     opacity: 1;
   }
 }
+
+
+
+/* Responsive Adjustments for Portfolio Section */
+.video-btn,
+.link-btn,
+.preview-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.preview-btn {
+  background: #3498db;
+  color: #fff;
+}
+
+.preview-btn:hover {
+  background: #217dbb;
+}
+
+.link-btn {
+  background: #27ae60;
+  color: #fff;
+}
+
+.link-btn:hover {
+  background: #1f8b4d;
+}
+
+.video-btn {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.video-btn:hover {
+  background: #c0392b;
+}
+
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.video-modal-content iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
