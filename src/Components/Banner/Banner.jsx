@@ -9,6 +9,7 @@ import {
   Instagram,
   PlayFill,
   Whatsapp,
+  Github
 } from "react-bootstrap-icons";
 
 import bannerMan from "../../assets/img/banner/banner-man.png";
@@ -16,6 +17,12 @@ import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
 import bnArrow from "../../assets/img/banner/bn-arrow.png";
 import VideoPlay from "../Shared/VideoPlay/VideoPlay";
+
+const XingIcon = ({ size = 24, color = "currentColor" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill={color} viewBox="0 0 16 16">
+    <path d="M11.222 0h3.284L9.034 9.186 16 16h-3.284L6.034 9.186 11.222 0zM4.778 3.32h3.284L5.27 8.16l2.792 4.52H4.778L1.986 8.16l2.792-4.84z"/>
+  </svg>
+);
 
 const socalIcon = [
   {
@@ -26,7 +33,7 @@ const socalIcon = [
   },
   {
     id: 2,
-    icon: <Twitter />,
+    icon: <XingIcon color="#FFFFFF" size={20} />,
     link: "https://www.xing.com/profile/Hussam_ALNABELSI",
   },
   {
@@ -44,6 +51,11 @@ const socalIcon = [
     icon: <Instagram />,
     link: "https://www.instagram.com/hussamalnabelsi/",
   },
+  {
+     id: 6,
+     icon: <Github />,
+     link: "https://github.com/HussamFull", 
+   },
 ];
 const Banner = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);

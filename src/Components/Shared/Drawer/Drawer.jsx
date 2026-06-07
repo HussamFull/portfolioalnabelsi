@@ -26,7 +26,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> address </span>
-              <span className="textp"> Petersdamm 05 , 48167 Münster </span>
+              <span className="textp"> Petersdamm  , 48167 Münster </span>
             </div>
           </div>
           <div className="sub__contac-item">
@@ -44,9 +44,9 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         </div>
         <div className="sub__contact-right mb-80 position-relative">
           <ul className="social d-flex gap-3">
-            {socialIcons.map(({ icon, id }) => (
+            {socialIcons.map(({ icon, id, link }) => (
               <li key={id}>
-                <Link>
+                <Link to={link} target="_blank" rel="noopener noreferrer">
                   <i>{icon}</i>
                 </Link>
               </li>
@@ -62,7 +62,13 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
               <ChevronRight />
             </i>
           </span>
-          <span className="get__text"> Lass uns reden </span>
+          <span 
+  className="get__text" 
+  onClick={() => window.open("https://wa.me/4917646602477", "_blank")}
+  style={{ cursor: 'pointer' }}
+>
+  Lass uns reden
+</span>
         </Link>
       </div>
     </div>
