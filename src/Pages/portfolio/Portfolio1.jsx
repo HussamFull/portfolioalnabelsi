@@ -207,6 +207,26 @@ export default function Portfolio1() {
         videoLink: "https://www.youtube.com/embed/pWMaLeMCwR8?si=j0urmiueMF1fxDQN", // لا يوجد فيديو لهذا المشروع
       galTitle: 'Web 3'
     },
+      {
+      id: 23,
+      category: 'filter-nodejs',
+      title: '#Ecommerce_Api_Authentication _Register_Login',
+      imgSrc: 'portfolio-23.png',
+      previewLink: 'portfolio-23.png',
+      detailsLink: 'https://github.com/HussamFull/ecoProject',
+        videoLink: "https://www.youtube.com/embed/JeyBnzp5Iig?si=Ts8Jj-t_A2irbfmo", // لا يوجد فيديو لهذا المشروع
+      galTitle: 'Web 3'
+    },
+     {
+      id: 24,
+      category: 'filter-nodejs',
+      title: '#Back_End_Ecommerce_Add_Category_Add_Roles_Admin_User.',
+      imgSrc: 'portfolio-24.png',
+      previewLink: 'portfolio-24.png',
+      detailsLink: 'https://github.com/HussamFull/ecoProject',
+        videoLink: "https://www.youtube.com/embed/UxZPUOtRc4I?si=B3raFjN-mZDjV2Vq", // لا يوجد فيديو لهذا المشروع
+      galTitle: 'Web 3'
+    },
   ];
 
   const getImageUrl = (imageName) => {
