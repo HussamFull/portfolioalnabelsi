@@ -164,7 +164,7 @@ export default function Portfolio1() {
       imgSrc: 'portfolio-18.png',
       previewLink: 'portfolio-18.png',
       detailsLink: 'https://tshop-6wkj.onrender.com',
-      videoLink: null, // لا يوجد فيديو لهذا المشروع
+      videoLink: "https://www.youtube.com/embed/_aUt7ayx7gw?si=39JyHsKldTAY3ED9", // لا يوجد فيديو لهذا المشروع
       galTitle: 'Web 3'
     },
     {
@@ -225,6 +225,16 @@ export default function Portfolio1() {
       previewLink: 'portfolio-24.png',
       detailsLink: 'https://github.com/HussamFull/ecoProject',
         videoLink: "https://www.youtube.com/embed/UxZPUOtRc4I?si=B3raFjN-mZDjV2Vq", // لا يوجد فيديو لهذا المشروع
+      galTitle: 'Web 3'
+    },
+     {
+      id: 25,
+      category: 'filter-aspnet',
+      title: 'Intelligentes Restaurant-Managementsystem (RestoApp)',
+      imgSrc: 'portfolio-25.png',
+      previewLink: 'portfolio-25.png',
+      detailsLink: 'https://github.com/HussamFull/AlamniLMS.PL',
+      videoLink: 'https://www.youtube.com/embed/jQ0QbcIZcGI?si=Eq2hxEaBrf_V9wzE', // رابط embed للمشاهدة الفورية
       galTitle: 'Web 3'
     },
   ];
